@@ -1,0 +1,20 @@
+{
+  "name": "dddgym",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "dev": "pnpm run \"/dev:/\"",
+    "dev:node": "node --enable-source-maps --watch dist/index.js",
+    "dev:tsc": "tsc --watch --preserveWatchOutput",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "typescript": "^5.4.5"
+  }
+}
