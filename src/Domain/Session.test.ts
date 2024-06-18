@@ -12,7 +12,7 @@ describe('Session Domain Test', () => {
       const participant2 = Participant.create(crypto.randomUUID(), crypto.randomUUID())
       // act
       session.reserveSpot(participant1)
-      session.reserveSpot(participant2)
+      expect(() => session.reserveSpot(participant2)).toThrow()
       // assert
       // participant 2 reservation fail
     })
